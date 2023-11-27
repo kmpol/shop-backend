@@ -5,3 +5,5 @@ spring:
     password: admin123
   liquibase:
     change-log: classpath:liquibase-changelog.xml
+  jpa:
+    show-sql: true
