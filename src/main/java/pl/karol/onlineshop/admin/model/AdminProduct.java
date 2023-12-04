@@ -1,13 +1,16 @@
 package pl.karol.onlineshop.admin.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "product")
 @Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class AdminProduct {
 
     @Id
