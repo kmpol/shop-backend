@@ -12,3 +12,7 @@ spring:
       pageable:
         default-page-size: 25
         max-page-size: 100
+server:
+  error:
+    include-message: always
+    include-binding-errors: always

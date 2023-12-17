@@ -1,5 +1,6 @@
 package pl.karol.onlineshop.admin.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
@@ -28,12 +29,12 @@ public class AdminProductController {
     }
 
     @PostMapping
-    public AdminProduct saveProduct(@RequestBody AdminProductDto adminProductDto) {
+    public AdminProduct saveProduct(@RequestBody @Valid AdminProductDto adminProductDto) {
         return adminProductService.createProduct(adminProductDto);
     }
 
     @PutMapping(path = "{productId}")
-    public AdminProduct updateProduct(@RequestBody AdminProductDto updates, @PathVariable Long productId) {
+    public AdminProduct updateProduct(@RequestBody @Valid AdminProductDto updates, @PathVariable Long productId) {
         return adminProductService.updateProduct(updates, productId);
     }
 }
