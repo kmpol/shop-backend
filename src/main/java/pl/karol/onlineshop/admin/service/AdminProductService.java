@@ -37,4 +37,8 @@ public class AdminProductService {
         AdminProduct product = AdminProductMapper.mapDtoToAdminProduct(updatedProductDto, productId);
         return adminProductRepository.save(product);
     }
+
+    public void deleteProduct(Long id) {
+        adminProductRepository.deleteById(id);
+    }
 }
