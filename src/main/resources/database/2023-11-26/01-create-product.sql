@@ -1,5 +1,5 @@
---liquibase formatted sql
---changeset Karol Malicki:1
+-- liquibase formatted sql
+-- changeset Karol Malicki:1
 create table product (
     id bigint not null auto_increment PRIMARY KEY,
     name varchar(255) not null,

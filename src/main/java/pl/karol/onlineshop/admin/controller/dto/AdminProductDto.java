@@ -19,5 +19,6 @@ public record AdminProductDto(
         String description,
         @Min(0)
         BigDecimal price,
-        AdminProductCurrency currency) {
+        AdminProductCurrency currency,
+        String image) {
 }
