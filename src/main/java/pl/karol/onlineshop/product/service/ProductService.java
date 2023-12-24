@@ -1,7 +1,6 @@
 package pl.karol.onlineshop.product.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -18,4 +17,7 @@ public class ProductService {
         return productRepository.findAll(pageable);
     }
 
+    public Product getProductBySlug(String slug) {
+        return productRepository.findBySlug(slug).orElseThrow();
+    }
 }
