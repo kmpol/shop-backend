@@ -18,7 +18,7 @@ public class AdminProduct {
     private Long id;
 
     private String name;
-    private String category;
+    private Long categoryId;
     private String description;
     private String fullDescription;
     private BigDecimal price;

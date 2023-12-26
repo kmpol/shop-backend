@@ -10,7 +10,7 @@ public class AdminProductMapper {
                 .name(dto.name())
                 .price(dto.price())
                 .currency(dto.currency())
-                .category(dto.category())
+                .categoryId(dto.categoryId())
                 .description(dto.description())
                 .fullDescription(dto.fullDescription())
                 .image(dto.image())
