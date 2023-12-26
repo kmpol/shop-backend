@@ -5,9 +5,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pl.karol.onlineshop.admin.model.AdminProduct;
-import pl.karol.onlineshop.admin.model.AdminProductCurrency;
-import pl.karol.onlineshop.admin.repository.AdminProductRepository;
+import pl.karol.onlineshop.admin.product.model.AdminProduct;
+import pl.karol.onlineshop.admin.product.model.AdminProductCurrency;
+import pl.karol.onlineshop.admin.product.repository.AdminProductRepository;
+import pl.karol.onlineshop.admin.product.service.AdminProductService;
 
 import java.math.BigDecimal;
 import java.util.NoSuchElementException;

@@ -1,4 +1,4 @@
-package pl.karol.onlineshop.admin.model;
+package pl.karol.onlineshop.admin.product.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,8 +1,7 @@
-package pl.karol.onlineshop.admin.controller;
+package pl.karol.onlineshop.admin.product.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.core.io.FileSystemResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,19 +9,16 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import pl.karol.onlineshop.admin.controller.dto.AdminProductDto;
-import pl.karol.onlineshop.admin.controller.dto.UploadResponse;
-import pl.karol.onlineshop.admin.model.AdminProduct;
-import pl.karol.onlineshop.admin.service.AdminProductImageService;
-import pl.karol.onlineshop.admin.service.AdminProductService;
+import pl.karol.onlineshop.admin.product.controller.dto.AdminProductDto;
+import pl.karol.onlineshop.admin.product.controller.dto.UploadResponse;
+import pl.karol.onlineshop.admin.product.model.AdminProduct;
+import pl.karol.onlineshop.admin.product.service.AdminProductImageService;
+import pl.karol.onlineshop.admin.product.service.AdminProductService;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 @RequiredArgsConstructor
 @RestController

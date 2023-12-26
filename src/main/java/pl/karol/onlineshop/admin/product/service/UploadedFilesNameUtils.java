@@ -1,4 +1,4 @@
-package pl.karol.onlineshop.admin.service;
+package pl.karol.onlineshop.admin.product.service;
 
 import com.github.slugify.Slugify;
 import org.apache.commons.io.FilenameUtils;

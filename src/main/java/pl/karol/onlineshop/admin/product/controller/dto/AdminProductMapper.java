@@ -1,6 +1,6 @@
-package pl.karol.onlineshop.admin.controller.dto;
+package pl.karol.onlineshop.admin.product.controller.dto;
 
-import pl.karol.onlineshop.admin.model.AdminProduct;
+import pl.karol.onlineshop.admin.product.model.AdminProduct;
 import pl.karol.onlineshop.utils.SlugifyUtilFunction;
 
 public class AdminProductMapper {

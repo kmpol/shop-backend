@@ -1,9 +1,9 @@
-package pl.karol.onlineshop.admin.controller.dto;
+package pl.karol.onlineshop.admin.product.controller.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.Length;
-import pl.karol.onlineshop.admin.model.AdminProductCurrency;
+import pl.karol.onlineshop.admin.product.model.AdminProductCurrency;
 
 import java.math.BigDecimal;
 

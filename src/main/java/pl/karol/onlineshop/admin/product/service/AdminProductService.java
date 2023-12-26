@@ -1,12 +1,12 @@
-package pl.karol.onlineshop.admin.service;
+package pl.karol.onlineshop.admin.product.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import pl.karol.onlineshop.admin.controller.dto.AdminProductDto;
-import pl.karol.onlineshop.admin.controller.dto.AdminProductMapper;
-import pl.karol.onlineshop.admin.model.AdminProduct;
-import pl.karol.onlineshop.admin.repository.AdminProductRepository;
+import pl.karol.onlineshop.admin.product.controller.dto.AdminProductDto;
+import pl.karol.onlineshop.admin.product.controller.dto.AdminProductMapper;
+import pl.karol.onlineshop.admin.product.model.AdminProduct;
+import pl.karol.onlineshop.admin.product.repository.AdminProductRepository;
 
 
 @Service
