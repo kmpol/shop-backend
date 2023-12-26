@@ -12,6 +12,7 @@ public class AdminProductMapper {
                 .currency(dto.currency())
                 .category(dto.category())
                 .description(dto.description())
+                .fullDescription(dto.fullDescription())
                 .image(dto.image())
                 .slug(new SlugifyUtilFunction().apply(dto.slug()))
                 .build();

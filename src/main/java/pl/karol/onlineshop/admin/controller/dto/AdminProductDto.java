@@ -17,6 +17,10 @@ public record AdminProductDto(
         @NotBlank
         @Length(min = 3, max = 1023)
         String description,
+        @NotBlank
+        @Length(min = 3, max = 2047)
+        String fullDescription,
+
         @Min(0)
         BigDecimal price,
         AdminProductCurrency currency,

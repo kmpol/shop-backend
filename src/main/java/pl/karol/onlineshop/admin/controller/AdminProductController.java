@@ -76,5 +76,4 @@ public class AdminProductController {
                 .header(HttpHeaders.CONTENT_TYPE, Files.probeContentType(Path.of(filename)))
                 .body(file);
     }
-
 }
