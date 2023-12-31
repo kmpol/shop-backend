@@ -1,10 +1,7 @@
-package pl.karol.onlineshop.category.model;
+package pl.karol.onlineshop.common.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import pl.karol.onlineshop.product.model.Product;
-
-import java.util.List;
 
 @Entity
 @Getter

@@ -1,6 +1,5 @@
 package pl.karol.onlineshop.product.service;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,8 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import pl.karol.onlineshop.product.model.Product;
-import pl.karol.onlineshop.product.repository.ProductRepository;
+import pl.karol.onlineshop.common.model.Product;
+import pl.karol.onlineshop.common.repository.ProductRepository;
 
 import java.util.List;
 

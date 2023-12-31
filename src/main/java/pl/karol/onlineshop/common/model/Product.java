@@ -1,10 +1,9 @@
-package pl.karol.onlineshop.product.model;
+package pl.karol.onlineshop.common.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import pl.karol.onlineshop.review.model.Review;
 
 import java.math.BigDecimal;
 import java.util.List;

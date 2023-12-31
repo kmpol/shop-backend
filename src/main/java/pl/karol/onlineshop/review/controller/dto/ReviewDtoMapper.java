@@ -1,7 +1,6 @@
 package pl.karol.onlineshop.review.controller.dto;
 
-import org.jsoup.Jsoup;
-import pl.karol.onlineshop.review.model.Review;
+import pl.karol.onlineshop.common.model.Review;
 import pl.karol.onlineshop.utils.JsoupUtilFunction;
 
 public class ReviewDtoMapper {

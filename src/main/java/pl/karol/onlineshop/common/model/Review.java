@@ -1,4 +1,4 @@
-package pl.karol.onlineshop.review.model;
+package pl.karol.onlineshop.common.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

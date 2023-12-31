@@ -1,10 +1,10 @@
-package pl.karol.onlineshop.product.repository;
+package pl.karol.onlineshop.common.repository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.karol.onlineshop.product.model.Product;
+import pl.karol.onlineshop.common.model.Product;
 
 import java.util.Optional;
 

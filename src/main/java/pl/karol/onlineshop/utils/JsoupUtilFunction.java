@@ -8,7 +8,6 @@ import java.util.function.Function;
 
 public class JsoupUtilFunction implements Function<String, String> {
 
-
     @Override
     public String apply(String text) {
         return Jsoup.clean(text, Safelist.none());

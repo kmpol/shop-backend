@@ -1,4 +1,4 @@
-package pl.karol.onlineshop.product.controller.dto;
+package pl.karol.onlineshop.common.dto;
 
 import lombok.Builder;
 import lombok.Getter;

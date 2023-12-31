@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.karol.onlineshop.review.controller.dto.ReviewDto;
 import pl.karol.onlineshop.review.controller.dto.ReviewDtoMapper;
-import pl.karol.onlineshop.review.model.Review;
+import pl.karol.onlineshop.common.model.Review;
 import pl.karol.onlineshop.review.service.ReviewService;
 
 @RestController
