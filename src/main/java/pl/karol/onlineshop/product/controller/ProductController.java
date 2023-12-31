@@ -4,14 +4,18 @@ import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.karol.onlineshop.product.controller.dto.ProductListDto;
 import pl.karol.onlineshop.product.model.Product;
 import pl.karol.onlineshop.product.service.ProductService;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
@@ -22,8 +26,21 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public Page<Product> getProducts(Pageable pageable) {
-        return productService.getProducts(pageable);
+    public Page<ProductListDto> getProducts(Pageable pageable) {
+        Page<Product> products = productService.getProducts(pageable);
+        List<ProductListDto> productListDtos = products.getContent().stream()
+                .map(product -> ProductListDto.builder()
+                                .id(product.getId())
+                                .name(product.getName())
+                                .description(product.getDescription())
+                                .price(product.getPrice())
+                                .currency(product.getCurrency())
+                                .slug(product.getSlug())
+                                .image(product.getImage())
+                                .build())
+                .toList();
+        return new PageImpl<>(productListDtos, pageable, products.getTotalElements());
+
     }
 
     @GetMapping(path = "{slug}")
