@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.karol.onlineshop.common.dto.ProductDto;
 import pl.karol.onlineshop.common.dto.ProductListDto;
 import pl.karol.onlineshop.common.model.Product;
 import pl.karol.onlineshop.product.service.ProductService;
@@ -44,7 +45,7 @@ public class ProductController {
     }
 
     @GetMapping(path = "{slug}")
-    public Product getProductBySlug(
+    public ProductDto getProductBySlug(
             @PathVariable
             @Pattern(regexp = "[a-z0-9\\-]+")
             @Length(max = 255) String slug) {

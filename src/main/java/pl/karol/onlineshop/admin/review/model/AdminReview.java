@@ -1,14 +1,12 @@
-package pl.karol.onlineshop.common.model;
+package pl.karol.onlineshop.admin.review.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
 
 @Entity
+@Table(name = "review")
 @Getter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class Review {
+public class AdminReview {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +15,5 @@ public class Review {
     private String authorName;
     private String content;
     @Column(name = "is_moderated")
-    @Setter
     private Boolean isModerated;
 }
